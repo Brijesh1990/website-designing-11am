@@ -9,10 +9,6 @@ body
 {
 box-sizing: border-box;
 overflow-x: hidden;   
-background: url('../images/bg-one.png') no-repeat !important;
-background-size: cover !important;
-background-position: center; 
-background-attachment: fixed !important;
 }
 #be-icecream-navbar
 {
@@ -61,13 +57,13 @@ margin-left: 8%;
 }
 #be-icecream-content
 {
-width: 90%;
+width: 100%;
 height: auto;
-margin-left: 5%;
 }
 #be-icecream-footer
 {
-
+width: 100%;
+height: auto;
 }
 #main-content
 {
@@ -85,7 +81,40 @@ background: url('../images/loader.gif') no-repeat;
 background-position: center;
 background-size: 400px 380px;    
 }
+.natural-products
+{
+width: 100% !important;
+height: auto !important;
+background: url('../images/bg-one.png') no-repeat !important;
+background-size: cover !important;
+background-position: center !important;    
+}
+.traditions-products
+{
+width: 100% !important;
+height: auto !important;
+background: url('../images/milk-bg.png') no-repeat !important;
+background-size: cover !important;
+background-position: center !important;    
+}
 
+.traditions-gallery
+{
+width: 100% !important;
+height: auto !important;  
+}
+.client-say img 
+{
+width: 85px !important;    
+height: 85px !important;
+}
+
+#be-icecream-footer
+{
+width: 100%;
+height: auto;    
+margin-top: 10% !important;
+}
 @media screen and (max-width:580px)
 {
 .navbar-link
