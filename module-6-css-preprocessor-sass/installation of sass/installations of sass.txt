@@ -1,0 +1,4 @@
+System Requirements for Sass  =>
+
+  a) if used vs code sass provides a sass live compiler
+  b) add extension sass or scss live compiler

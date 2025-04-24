@@ -1,0 +1,123 @@
+// sass operator : opreator operand some actions examples : additions (+) , substractions (-) , multiplications (*) , / , %  etc
+
+//sass variables : A variables is just like a container where we stored informations about data i.e called variables 
+
+// sass variables is denoted by $ symbol
+
+// sass nesting : nesting is used to create a element effects withing another element there we used nesting inside of sass 
+
+// nesting called in sass via &
+
+// sass mixin : mixin is used to reusability of code one section to another section of common code 
+
+// add mixin 
+
+@mixin commonTxt
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-size: 17px; 
+}
+
+// background color
+
+$bg-info:#3464eb;
+
+$bg-success:#077a43;
+
+$bg-warning:#c8cf0e;
+
+$bg-info:#24ced4;
+
+$bg-secondary:#a2abab;
+
+$bg-danger:red;
+
+$bg-dark:#36353b;
+
+$bg-primary:#2419c2;
+
+$bg-white:white;
+
+// text color
+$txt-info:#3464eb;
+
+$txt-success:#077a43;
+
+$txt-warning:#c8cf0e;
+
+$txt-info:#24ced4;
+
+$txt-secondary:#a2abab;
+
+$txt-danger:red;
+
+$txt-dark:#000000;
+
+$txt-primary:#2419c2;
+
+$txt-white:white;
+
+* 
+{
+@include commonTxt;
+}
+
+body 
+{
+@include commonTxt;
+background-color: $bg-warning;    
+}
+html 
+{
+font-size: 50%;    
+}
+.main-header 
+{
+width: calc(90% - 300px);
+height: auto;
+margin: auto;
+display: flex;
+flex-direction: column;
+justify-content: center;    
+background-color:$bg-dark;
+color: $txt-white;
+@include commonTxt;
+padding: 15px;
+margin-top: 5%;
+// nesting in heading 
+& h1 
+{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 40px;
+color: coral;
+// font-size: 5rem + 3rem;
+font-size: 8rem - 3rem;      
+}
+
+& p 
+{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+@include commonTxt;
+color: coral;   
+}
+& h1:hover 
+{
+color: $txt-white;
+font-size: 3rem + 3rem;
+}
+
+& p:hover 
+{
+
+color: $txt-white;
+@include commonTxt;
+}
+
+& h1::after 
+{
+content: "superpower";    
+}
+
+}

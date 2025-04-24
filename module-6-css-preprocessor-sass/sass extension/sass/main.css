@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: aqua;
+}
+
+.main-header {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  font-size: 17px;
+  padding: 15px;
+  margin-top: 5%;
+}/*# sourceMappingURL=main.css.map */
