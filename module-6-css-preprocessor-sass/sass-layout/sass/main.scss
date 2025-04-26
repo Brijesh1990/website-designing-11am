@@ -1,0 +1,52 @@
+// sass operator
+// sass variables
+$bg-success:green;
+$bg-coral:coral;
+$bg-skyblue:skyblue;
+$bg-dark:black;
+$bg-primary:blue;
+$bg-white:white;
+
+$txt-success:green;
+$txt-coral:coral;
+$txt-skyblue:skyblue;
+$txt-dark:black;
+$txt-primary:blue;
+$txt-white:white;
+
+$margin:margin-auto;
+$padding:padding-auto;
+$max-width:100%;
+$max-height:100%;
+$min-width:100%;
+$min-height:100%;
+
+// sass nesting
+
+// sass mixing
+
+// sass extends 
+
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;    
+}
+body 
+{
+overflow-x: hidden;
+background-color: $bg-skyblue;    
+}
+#sass-header
+{
+margin: 0;
+padding: 40px;
+background-color: white;    
+}
+#sass-navbar
+{
+@extend  #sass-navbar;
+padding: 10px;  
+background-color: black;
+}

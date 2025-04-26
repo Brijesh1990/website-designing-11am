@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: skyblue;
+}
+
+#sass-header {
+  margin: 0;
+  padding: 40px;
+  background-color: white;
+}
+
+#sass-navbar {
+  padding: 10px;
+  background-color: black;
+}/*# sourceMappingURL=main.css.map */
